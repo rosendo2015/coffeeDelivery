@@ -1,9 +1,11 @@
+import { Header } from '../../components/Header'
 import { Container } from './styles.ts'
+
 
 export function Home() {
   return (
     <Container>
-      <h1>Rosendo</h1>
+      <Header></Header>
     </Container>
   )
 }

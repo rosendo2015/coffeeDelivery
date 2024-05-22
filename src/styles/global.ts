@@ -6,7 +6,18 @@ export default createGlobalStyle`
     box-sizing: border-box;
 }
 body{
+    font-family: "Roboto", sans-serif;
     background: ${({theme})=>theme.COLORS.BACKGROUND_800};
-    color: ${({theme})=>theme.COLORS.WHITE};
+    color: ${({theme})=>theme.COLORS.base_title};
+}
+a{
+    text-decoration: none;
+}
+button, a{
+    cursor: pointer;
+    filter: 0.2s;
+}
+button:hover, a:hover{
+   filter: brightness(0.9);
 }
 `
