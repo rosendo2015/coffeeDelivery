@@ -6,6 +6,7 @@ display: flex;
 flex-direction: column;
 main{
     margin-top: 80px;
+    padding: 0 160px;
 }
 .top h1{
     font-family: "Varela Round", sans-serif;
@@ -59,7 +60,7 @@ main{
 }
 
 .topMain{
-    padding: 32px 160px;
+    padding: 32px 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
