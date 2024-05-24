@@ -15,9 +15,4 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 4px;
-
-icon{
-    color: ${({theme})=>theme.COLORS.brand_yellow_dark};
-}
-
 `

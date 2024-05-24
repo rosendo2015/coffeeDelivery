@@ -7,7 +7,7 @@ justify-content: space-between;
 
 width: 100%;
 height: 105px;
-padding: 32px 80px;
+padding: 32px 160px;
 
 .buttonWrapper{    
     display: flex;

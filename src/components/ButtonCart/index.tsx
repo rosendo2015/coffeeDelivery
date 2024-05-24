@@ -6,7 +6,7 @@ interface buttonProps {
     loading ?: boolean;
     icon ?: IconBaseProps;
 }
-export function Button({ title, loading = false, icon, ...rest }: buttonProps) {
+export function ButtonCart({ title, loading = false, icon, ...rest }: buttonProps) {
     return (
         <ButtonContainer
             type='button'
