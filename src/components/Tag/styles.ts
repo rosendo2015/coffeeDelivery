@@ -7,5 +7,6 @@ color: ${({theme})=>theme.COLORS.brand_yellow_dark};
 background-color: ${({theme})=>theme.COLORS.brand_yellow_light};
 border-radius: 9999px;
 text-align: center;
-margin-top: 1rem;
+
+font-size: 10px;
 `

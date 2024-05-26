@@ -41,7 +41,15 @@ export function Home() {
           </div>
           <img src={CoffeeDelivery} alt="copo de café" />
         </div>
+        <h2>Nossos cafés</h2>
+        <div className='wrapperCards'>
         <CardProduct/>
+        <CardProduct/>
+        <CardProduct/>
+        <CardProduct/>
+        <CardProduct/>
+        <CardProduct/>
+        </div>
       </main>
     </Container>
   )
