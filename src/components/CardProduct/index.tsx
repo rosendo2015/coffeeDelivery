@@ -1,8 +1,9 @@
 import { CardProductContainer } from "./styles";
 import coffee001 from '../../assets/coffee001.png'
 import { Tag } from "../Tag";
-import { ButtonCart } from "../ButtonCart";
+
 import { FaCartShopping } from "react-icons/fa6";
+import { ButtonCartProduct } from "../ButtonCartProduct";
 
 export function CardProduct() {
     return (
@@ -21,7 +22,7 @@ export function CardProduct() {
                     <strong>01</strong>
                     <button>+</button>
                 </div>
-                <ButtonCart title="" icon={<FaCartShopping size={20} />} />
+                <ButtonCartProduct title="" icon={<FaCartShopping size={20} />} />
             </div>
         </CardProductContainer>
     )

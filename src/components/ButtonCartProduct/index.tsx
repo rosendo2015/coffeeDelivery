@@ -1,14 +1,14 @@
 import { IconBaseProps } from 'react-icons';
-import { ButtonContainer } from './styles'
+import { ButtonCardProductContainer } from './styles'
 
 interface buttonProps {
     title: string;
     loading?: boolean;
     icon?: IconBaseProps;
 }
-export function ButtonCart({title, loading = false, icon, ...rest }: buttonProps) {
+export function ButtonCartProduct({title, loading = false, icon, ...rest }: buttonProps) {
     return (
-        <ButtonContainer
+        <ButtonCardProductContainer
            
             type='button'
             disabled={loading}
@@ -18,6 +18,6 @@ export function ButtonCart({title, loading = false, icon, ...rest }: buttonProps
                 {icon}
             </>
             {loading ? 'Carregando...' : title}
-        </ButtonContainer>
+        </ButtonCardProductContainer>
     )
 }
