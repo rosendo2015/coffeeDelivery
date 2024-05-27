@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import background from "../../assets/Background.svg"
+
 export const Container = styled.div`
 width: 100%;
 
@@ -74,6 +76,10 @@ line-height: 130%;
 }
 
 .topMain{
+    background-image: url(${background});
+    background-size: 100%;
+    background: filter(blur(1.5));
+
     padding: 32px 0;
     display: flex;
     align-items: flex-start;
