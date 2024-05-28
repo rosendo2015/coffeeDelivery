@@ -10,8 +10,10 @@ export function Header() {
         <HeaderContainer>
             <img src={logo} alt="" />
             <div className="buttonWrapper">
-                <LocalTag icon={<FaMapMarkerAlt size={22}/>} title="Fortaleza, CE"></LocalTag>
-                <ButtonCart title="" icon={<FaCartPlus size={22}/>}/>
+                <LocalTag icon={<FaMapMarkerAlt size={22} />} title="Fortaleza, CE"></LocalTag>
+                <a href="/completOrder">
+                    <ButtonCart title="" icon={<FaCartPlus size={22} />} />
+                </a>
             </div>
         </HeaderContainer>
     )

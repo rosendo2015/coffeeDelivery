@@ -5,14 +5,14 @@ display: flex;
 align-items: center;
 justify-content: center;
 
-background-color: ${({theme})=>theme.COLORS.brand_yellow_light};
+background-color: ${({theme})=>theme.colors["brand-yellow-light"]};
 
 border: none;
 padding: 13px;
 
 border-radius: 6px;
 font-weight: 500;
-color: ${({theme})=>theme.COLORS.brand_yellow_dark};
+color: ${({theme})=>theme.colors["brand-yellow-dark"]};
 
 
 

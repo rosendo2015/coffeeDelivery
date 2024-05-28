@@ -7,8 +7,8 @@ export default createGlobalStyle`
     outline: none;
 }
 body{
-    background: ${({theme})=>theme.COLORS.base_background};
-    color: ${({theme})=>theme.COLORS.base_text};
+    background: ${({theme})=>theme.colors['base-background']};
+    color: ${({theme})=>theme.colors['base-text']};
     -webkit-font-smoothing: antialiased;
 }
 a{
@@ -18,9 +18,9 @@ button, a{
     cursor: pointer;
 }
 body, button, input, textarea{
-    font-family: "Roboto", sans-serif;
+    font-family: ${({theme})=>theme.fonts.regular};
     font-weight: 400;
-    font-size: 1rem;
+    font-size: ${({theme})=>theme.textSizes['text-regular-m']};
 } 
 button:hover, a:hover{
    filter: brightness(0.9);

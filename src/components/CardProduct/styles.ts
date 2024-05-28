@@ -6,7 +6,7 @@ height: 310px;
 
 border-radius: 6px 36px 6px 36px;
 padding: 20px;
-background-color: ${({ theme }) => theme.COLORS.base_card};
+background-color: ${({ theme }) => theme.colors["base-card"]};
 display: flex;
 justify-content: center;
 align-items: center;
@@ -45,13 +45,13 @@ h3{
     gap: 8px;
     padding: 4px 6px;
     border-radius: 6px;
-    background-color: ${({ theme }) => theme.COLORS.base_button};
+    background-color: ${({ theme }) => theme.colors["base-button"]};
 }
 .wrapperPrice p {
-    color: var(--Base-Text, #574F4D);
+    color: ${({theme})=>theme.colors["base-text"]};
 text-align: left;
 /* Text/Regular S */
-font-family: Roboto;
+
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -77,6 +77,6 @@ justify-content: center;
     background: transparent;
     font-size: 2rem;
     border: none;
-    color: ${({ theme }) => theme.COLORS.brand_purple};
+    color: ${({ theme }) => theme.colors["brand-purple"]};
 }
 `

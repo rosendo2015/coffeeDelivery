@@ -17,8 +17,8 @@ main{
     max-width: 588px;
     
     margin-bottom: 1rem;
-    color: ${({ theme }) => theme.COLORS.base_title};
-    text-shadow: 2px 2px 3px ${({ theme }) => theme.COLORS.base_hover};
+    color: ${({ theme }) => theme.colors["base-title"]};
+    text-shadow: 2px 2px 3px ${({ theme }) => theme.colors["base-hover"]};
 
     font-family: "Baloo 2";
 font-size: 48px;
@@ -31,8 +31,8 @@ line-height: 130%; /* 62.4px */
     margin-bottom: 1rem;
     max-width: 588px;    
     
-    color: ${({ theme }) => theme.COLORS.base_subtitle};
-    text-shadow: 2px 2px 3px ${({ theme }) => theme.COLORS.base_hover};
+    color: ${({ theme }) => theme.colors["base-subtitle"]};
+    text-shadow: 2px 2px 3px ${({ theme }) => theme.colors["base-hover"]};
     
 font-size: 20px;
 font-style: normal;
@@ -60,10 +60,10 @@ line-height: 130%; /* 26px */
     height: 32px;
     border-radius: 50%;
     padding: 8px;
-    background: ${({ theme }) => theme.COLORS.brand_yellow_dark};
+    background: ${({ theme }) => theme.colors["brand-yellow-dark"]};
 }
 .itemList span svg{
-    color: ${({ theme }) => theme.COLORS.base_white};
+    color: ${({ theme }) => theme.colors["base-white"]};
 }
 .itemList p{
     
@@ -71,7 +71,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 130%;
-    color: ${({ theme }) => theme.COLORS.base_subtitle};
+    color: ${({ theme }) => theme.colors["base-subtitle"]};
 
 }
 

@@ -1,4 +1,3 @@
-import { Header } from '../../components/Header'
 import { Container } from './styles'
 import CoffeeDelivery from '../../assets/CoffeeDelivery.svg'
 import { FaCartShopping } from 'react-icons/fa6'
@@ -8,7 +7,6 @@ import { CardProduct } from '../../components/CardProduct'
 export function Home() {
   return (
     <Container>
-      <Header></Header>
       <main>
         <div className='topMain'>
           <div>

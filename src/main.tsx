@@ -1,15 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Home } from './pages/Home'
 import { ThemeProvider } from 'styled-components'
-import theme from './styles/theme'
 import GlobalStyles from './styles/global'
+
+import { defaultTheme } from './styles/theme/default'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Routes'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={defaultTheme}>
       <GlobalStyles/>
-      <Home />
+      <BrowserRouter>
+      <Router />
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,
 )
