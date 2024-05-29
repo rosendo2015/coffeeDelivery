@@ -1,19 +1,21 @@
-import { HeaderContainer } from "./styles";
+import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from "./styles";
 import logo from '../../assets/Logo.svg'
-
-import { LocalTag } from "../LocalTag";
 import { FaCartPlus, FaMapMarkerAlt } from "react-icons/fa";
-import { ButtonCart } from "../ButtonCart";
 
 export function Header() {
     return (
         <HeaderContainer>
-            <img src={logo} alt="" />
-            <div className="buttonWrapper">
-                <LocalTag icon={<FaMapMarkerAlt size={22} />} title="Fortaleza, CE"></LocalTag>
-                <a href="/completOrder">
-                    <ButtonCart title="" icon={<FaCartPlus size={22} />} />
-                </a>
+            <div className="container">
+                <img src={logo} alt="" />
+                <HeaderButtonsContainer>
+                    <HeaderButton variant="purple">
+                        <FaMapMarkerAlt size={22} />
+                        Fortaleza, CE
+                    </HeaderButton>
+                    <HeaderButton variant="yellow">
+                        <FaCartPlus size={22} />
+                    </HeaderButton>
+                </HeaderButtonsContainer>
             </div>
         </HeaderContainer>
     )
