@@ -1,12 +1,20 @@
-import { CardProduct } from "../../../../components/CardProduct";
 import { TitleText } from "../../../../components/Typography";
-import { OurCoffeesContainer } from "./styles";
 
-export function OurCoffees(){
-    return(
+import { CoffeeList, OurCoffeesContainer } from "./styles";
+import { CoffeeCard } from "../CoffeeCard";
+import { coffees } from "../../../../data/coffees";
+
+export function OurCoffees() {
+    return (
         <OurCoffeesContainer className="container">
             <TitleText size="l" color="subtitle">Nossos Cafés</TitleText>
-            <CardProduct />
+            <CoffeeList>
+                {coffees.map(coffee => (
+                    <CoffeeCard key={coffee.id} coffee={coffee}/>
+                ))}
+            </CoffeeList>
+
+
         </OurCoffeesContainer>
     )
 }
