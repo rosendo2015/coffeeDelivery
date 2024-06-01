@@ -19,4 +19,23 @@ grid-template-columns: 12.50rem 17.25rem 3.75rem;
 column-gap: 0.75rem;
 row-gap: 1rem;
 grid-auto-flow: dense;
+
+.cep{
+    grid-column: span 3;
+    max-width: 12.50rem;
+}
+.street{
+    grid-column: span 3;
+}
+.complement{
+    grid-column: span 2;
+}
+`
+export const PaymentMethodOptionContainer = styled.div`
+
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 0.75rem;
+
+
 `
