@@ -1,4 +1,4 @@
-import { CompletOrderForm } from "./components/CompletOrderForm";
+import { CompletOrderForm } from "./components/CompleteOrderForm";
 import { SelectedCoffees } from "./components/SelectedCoffees";
 import { CompletOrderContainer } from "./styles";
 

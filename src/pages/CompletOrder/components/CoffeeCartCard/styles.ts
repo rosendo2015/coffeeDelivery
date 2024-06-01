@@ -17,10 +17,10 @@ img{
 width: 4rem;
 height: 4rem;
 }
->p{
+}
+> p{
     font-weight: 700;
     align-self: flex-start;
-}
 }
 `
 export const ActionsContainer = styled.div`
@@ -35,4 +35,22 @@ gap: 0.5rem;
     height: 100%;
 }
 `
-export const RemoveButtonContainer = styled.button``
+export const RemoveButtonContainer = styled.button`
+display: flex;
+align-items: center;
+gap: 0.25rem;
+color: ${({theme})=>theme.colors["base-text"]};
+font-size: 0.7rem;
+height: 100%;
+border: none;
+background: ${({theme})=>theme.colors["base-button"]};
+padding: 0 0.5rem;
+border-radius: 6px;
+transition: 0.4s;
+svg{
+    color: ${({theme})=>theme.colors["brand-purple"]};
+}
+&:hover{
+    background: ${({theme})=>theme.colors["base-hover"]};
+}
+`

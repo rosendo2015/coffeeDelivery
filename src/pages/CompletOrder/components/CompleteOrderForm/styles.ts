@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { SectionBaseStyle } from "../../styles";
 
-export const CompletOrderFormContainer = styled.div`
+export const CompleteOrderFormContainer = styled.div`
 width: 40rem;
 display: flex;
 flex-direction: column;
