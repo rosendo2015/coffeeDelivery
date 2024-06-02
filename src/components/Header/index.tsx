@@ -16,7 +16,7 @@ export function Header() {
                         Fortaleza, CE
                     </HeaderButton>
                     <HeaderButton variant="yellow">
-                        <NavLink to='/completOrder'>
+                        <NavLink to='/completeOrder'>
                         <FaCartPlus size={22} />
                         </NavLink>
                     </HeaderButton>

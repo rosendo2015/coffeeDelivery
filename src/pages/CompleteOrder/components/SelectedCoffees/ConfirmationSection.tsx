@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 import { Button } from "../../../../components/Button";
 import { RegularText } from "../../../../components/Typography";
 import { ConfirmationSectionContainer } from "./styles";
 
-export function ConfirmationSection(){
-    return(
+export function ConfirmationSection() {
+    return (
         <ConfirmationSectionContainer>
             <div>
                 <RegularText size="s">Total de itens</RegularText>
@@ -17,7 +18,9 @@ export function ConfirmationSection(){
                 <RegularText weight={700} color="subtitle" size="l">Total</RegularText>
                 <RegularText weight={700} color="subtitle" size="l">R$ 33,20</RegularText>
             </div>
-            <Button text="Confirmar pedido"/>
+            <NavLink to="/orderConfirmed">
+                <Button text="Confirmar pedido" />
+            </NavLink>
         </ConfirmationSectionContainer>
     )
 }

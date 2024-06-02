@@ -53,5 +53,10 @@ svg{
    color: ${theme.colors[`brand-purple`]};
 }
 `}
+${({ variant, theme }) => variant === 'yellow' && css`
+svg{
+   color: ${theme.colors[`brand-yellow`]};
+}
+`}
 
 `
