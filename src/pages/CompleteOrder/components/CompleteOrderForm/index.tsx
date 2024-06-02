@@ -1,15 +1,15 @@
 import { CurrencyDollar, MapPinLine } from "@phosphor-icons/react";
 import { TitleText } from "../../../../components/Typography";
 import { SectionTitle } from "../SectionTitle";
-import { CompletOrderFormContainer, FormSectionContainer } from "./styles";
+import { CompleteOrderFormContainer, FormSectionContainer } from "./styles";
 import { useTheme } from "styled-components";
 import { AddressForm } from "./AddressForm";
 import { PaymentMethodOption } from "./PaymentMethodOption";
 
-export function CompletOrderForm() {
+export function CompleteOrderForm() {
     const { colors } = useTheme()
     return (
-        <CompletOrderFormContainer>
+        <CompleteOrderFormContainer>
             <TitleText size="xs" color="subtitle">
                 Complete seu pedido
             </TitleText>
@@ -34,6 +34,6 @@ export function CompletOrderForm() {
                 <PaymentMethodOption />
             </FormSectionContainer>
            
-        </CompletOrderFormContainer>
+        </CompleteOrderFormContainer>
     )
 }
