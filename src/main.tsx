@@ -6,13 +6,16 @@ import GlobalStyles from './styles/global'
 import { defaultTheme } from './styles/theme/default'
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Routes'
+import { CartContextProvider } from './contexts/CartContext'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider theme={defaultTheme}>
-      <GlobalStyles/>
+      <GlobalStyles />
       <BrowserRouter>
-      <Router />
+        <CartContextProvider>
+          <Router />
+        </CartContextProvider>
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>,
