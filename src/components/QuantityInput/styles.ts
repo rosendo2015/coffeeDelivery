@@ -30,6 +30,9 @@ padding: 0.5rem;
 ${({size})=>size === 'small' && css`
 padding: 0.3rem 0.5rem;
 `}
+${({size})=>size === 'big' && css`
+padding: 1rem;
+`}
 `
 export const IconWrapper = styled.button.attrs({
 type: "button",
