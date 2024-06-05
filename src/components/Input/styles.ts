@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 export const InputWrapper = styled.div`
 display: flex;
 flex-direction: column;
