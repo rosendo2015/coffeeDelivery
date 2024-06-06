@@ -5,34 +5,34 @@ import { useFormContext } from 'react-hook-form'
 import { RegularText } from '../../../../components/Typography'
 
 export const paymentMethods = {
-    credit:{
+    credit: {
         label: "Cartão de crédito",
-        icon: <CreditCard size={16}/>
+        icon: <CreditCard size={16} />
     },
-    debit:{
+    debit: {
         label: "Cartão de débito",
-        icon: <Bank size={16}/>
+        icon: <Bank size={16} />
     },
-    money:{
+    money: {
         label: "Dinheiro",
         icon: <Money size={16} />
     }
 }
 export function PaymentMethodOption() {
 
-    const{register, formState:{errors}} = useFormContext()
+    const { register, formState: { errors } } = useFormContext()
 
     const paymentMethodError = errors?.paymentMethod?.message as unknown as string
     return (
         <PaymentMethodOptionContainer>
-            {Object.entries(paymentMethods).map(([key, {label, icon}])=>(
+            {Object.entries(paymentMethods).map(([key, { label, icon }]) => (
                 <PaymentMethodInput
-                key={label}
-                id={key}
-                icon={icon}
-                label={label}
-                value={key}
-                {...register("paymentMethod")}
+                    key={label}
+                    id={key}
+                    icon={icon}
+                    label={label}
+                    value={key}
+                    {...register("paymentMethod")}
                 />
             ))}
             {paymentMethodError && <RegularText>{paymentMethodError}</RegularText>}
