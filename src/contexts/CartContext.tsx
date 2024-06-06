@@ -12,6 +12,7 @@ interface CartContextType {
     addCoffeeToCart: (coffee: CartItem) => void
     chageCartItemQuantity: (cartItemId: number, type: 'increase' | 'decrease') => void
     removeCartIem: (cartItemId: number) => void
+    cleanCart: () => void
 }
 
 interface CartContextProviderProps {
@@ -65,6 +66,9 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
         }))
         setCartItems(newCart)
     }
+    function cleanCart() {
+        setCartItems([])
+    }
 
     useEffect(() => {
         localStorage.setItem(COFFEE_ITEMS_STORAGE_KEY, JSON.stringify(cartItems));
@@ -78,7 +82,8 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
                 addCoffeeToCart,
                 chageCartItemQuantity,
                 removeCartIem,
-                cartItemsTotal
+                cartItemsTotal,
+                cleanCart
             }}>
             {children}
         </CartContext.Provider>
