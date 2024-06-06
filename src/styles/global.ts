@@ -22,9 +22,7 @@ body, button, input, textarea{
     font-weight: 400;
     font-size: ${({theme})=>theme.textSizes['text-regular-m']};
 } 
-button:hover, a:hover{
-   filter: brightness(0.9);
-}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
 -webkit-appearance: none;
