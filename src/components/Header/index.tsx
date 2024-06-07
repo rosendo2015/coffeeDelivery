@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { useCart } from "../../hooks/useCart";
 
 export function Header() {
-    const { cartQuantity, setCartQuantity } = useCart()
+    const { cartQuantity } = useCart()
     return (
         <HeaderContainer>
             <div className="container">
